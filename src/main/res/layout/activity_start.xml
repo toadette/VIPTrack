@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:id="@+id/userNameTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="142dp" />
+
+    <TextView
+        android:text="PostsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameTextView"
+        android:layout_alignLeft="@+id/userNameTextView"
+        android:layout_alignStart="@+id/userNameTextView"
+        android:layout_marginTop="57dp"
+        android:id="@+id/postsCountTextView" />
+
+    <TextView
+        android:text="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/userNameTextView"
+        android:layout_toLeftOf="@+id/userNameTextView"
+        android:layout_toStartOf="@+id/userNameTextView"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:text="Posts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/postsCountTextView"
+        android:layout_alignBottom="@+id/postsCountTextView"
+        android:layout_alignRight="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3" />
+
+
+</RelativeLayout>
