@@ -23,6 +23,6 @@ public class VipTrackModule {
     @Provides
     @Singleton
     VipRepository provideVipRepository() {
-        return new FakeVipRepository(context);
+        return new FakeVipRepository();
     }
 }

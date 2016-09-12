@@ -6,6 +6,11 @@ public class BasicVip implements Vip {
     private String userName;
     private int postsCount;
 
+    public BasicVip(String userName, int postsCount) {
+        this.userName = userName;
+        this.postsCount = postsCount;
+    }
+
     @Override
     public String getUsername() {
         return userName;
@@ -14,13 +19,5 @@ public class BasicVip implements Vip {
     @Override
     public int getPostsCount() {
         return postsCount;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public void setPostsCount(int postsCount) {
-        this.postsCount = postsCount;
     }
 }

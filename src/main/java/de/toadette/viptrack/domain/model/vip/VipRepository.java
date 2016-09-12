@@ -5,5 +5,5 @@ package de.toadette.viptrack.domain.model.vip;
  */
 public interface VipRepository {
 
-    Vip getVipByUserName(String username);
+    Vip getVipByUserId(int userId) throws VipNotFoundException;
 }

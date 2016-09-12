@@ -1,21 +1,20 @@
 package de.toadette.viptrack.port.adapter;
 
-import android.content.Context;
-
+import de.toadette.viptrack.domain.model.vip.BasicVip;
 import de.toadette.viptrack.domain.model.vip.Vip;
+import de.toadette.viptrack.domain.model.vip.VipNotFoundException;
 import de.toadette.viptrack.domain.model.vip.VipRepository;
 
 public class FakeVipRepository implements VipRepository {
 
-    private Context context;
-
-    public FakeVipRepository(Context context) {
-
-        this.context = context;
-    }
-
     @Override
-    public Vip getVipByUserName(String username) {
-        return null;
+    public Vip getVipByUserId(int id) throws VipNotFoundException {
+        if (id == 1) {
+            return new BasicVip("LaxoLax", 10);
+        }
+        if (id == 2) {
+            return new BasicVip("LaxolineLax", 100);
+        }
+        throw new VipNotFoundException();
     }
 }
