@@ -2,7 +2,6 @@ package de.toadette.viptrack.presentation;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.view.View;
 import android.widget.TextView;
 
 import javax.inject.Inject;
