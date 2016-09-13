@@ -159,7 +159,7 @@ checkstyle {
 task checkstyle(type: Checkstyle) {
 	configFile rootProject.file('checkstyle.xml')
 	source 'src/main/java'
-	ignoreFailures true
+	ignoreFailures false
 	showViolations true
 	include '**/*.java'
 		
