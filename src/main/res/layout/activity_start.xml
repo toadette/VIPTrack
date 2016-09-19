@@ -7,24 +7,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="@string/person"
         android:id="@+id/userNameTextView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="142dp" />
+        android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="PostsCount"
+        android:text="@string/totalpostscount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/userNameTextView"
         android:layout_alignLeft="@+id/userNameTextView"
         android:layout_alignStart="@+id/userNameTextView"
         android:layout_marginTop="57dp"
-        android:id="@+id/postsCountTextView" />
+        android:id="@+id/postsCountTextView"
+        android:layout_toEndOf="@id/userNameTextView"
+        android:layout_toRightOf="@id/userNameTextView"/>
 
     <TextView
-        android:text="Username"
+        android:text="@string/person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/userNameTextView"
@@ -35,7 +35,7 @@
         android:id="@+id/textView3" />
 
     <TextView
-        android:text="Posts"
+        android:text="@string/totalpostscount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView4"
@@ -43,6 +43,19 @@
         android:layout_alignBottom="@+id/postsCountTextView"
         android:layout_alignRight="@+id/textView3"
         android:layout_alignEnd="@+id/textView3" />
+
+    <Button
+        android:text="@string/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postsCountTextView"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="33dp"
+        android:onClick="startCardActivity"
+        android:id="@+id/button" />
 
 
 </RelativeLayout>

@@ -1,7 +1,9 @@
 package de.toadette.viptrack.presentation;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 import android.widget.TextView;
 
 import javax.inject.Inject;
@@ -27,14 +29,19 @@ public class StartActivity extends FragmentActivity {
     }
 
     private void init() {
+        TextView userNameTextView = (TextView) findViewById(R.id.userNameTextView);
+        TextView postCountTextView = (TextView) findViewById(R.id.postsCountTextView);
         try {
             Vip vipByUserName = vipRepository.getVipByUserId(1);
-            TextView userNameTextView = (TextView) findViewById(R.id.userNameTextView);
-            TextView postCountTextView = (TextView) findViewById(R.id.postsCountTextView);
             userNameTextView.setText(vipByUserName.getUsername());
             postCountTextView.setText(String.valueOf(vipByUserName.getPostsCount()));
         } catch (VipNotFoundException e) {
+            userNameTextView.setText("");
+            postCountTextView.setText("");
         }
     }
 
+    public void startCardActivity(View view) {
+        getApplication().startActivity(new Intent(this, CardActivity.class));
+    }
 }

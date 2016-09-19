@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">VIPTrack</string>
+    <string name="image">Bild</string>
+    <string name="person">Person</string>
+    <string name="totalpostscount">Posts</string>
+    <string name="card">Card</string>
+
 </resources>
