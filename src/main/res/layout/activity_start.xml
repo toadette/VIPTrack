@@ -16,21 +16,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/userNameTextView"
-        android:layout_alignLeft="@+id/userNameTextView"
         android:layout_alignStart="@+id/userNameTextView"
         android:layout_marginTop="57dp"
         android:id="@+id/postsCountTextView"
-        android:layout_toEndOf="@id/userNameTextView"
-        android:layout_toRightOf="@id/userNameTextView"/>
+        android:layout_toEndOf="@id/userNameTextView"/>
 
     <TextView
         android:text="@string/person"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/userNameTextView"
-        android:layout_toLeftOf="@+id/userNameTextView"
         android:layout_toStartOf="@+id/userNameTextView"
-        android:layout_marginRight="15dp"
         android:layout_marginEnd="15dp"
         android:id="@+id/textView3" />
 
@@ -41,7 +37,6 @@
         android:id="@+id/textView4"
         android:layout_alignBaseline="@+id/postsCountTextView"
         android:layout_alignBottom="@+id/postsCountTextView"
-        android:layout_alignRight="@+id/textView3"
         android:layout_alignEnd="@+id/textView3" />
 
     <Button
@@ -49,9 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/postsCountTextView"
-        android:layout_alignLeft="@+id/textView3"
         android:layout_alignStart="@+id/textView3"
-        android:layout_marginLeft="11dp"
         android:layout_marginStart="11dp"
         android:layout_marginTop="33dp"
         android:onClick="startCardActivity"
