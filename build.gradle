@@ -181,7 +181,7 @@ apply plugin: 'pmd'
 
 task pmd(type: Pmd, group: 'reporting', description: 'Inspect sourcecode for bugs') {
     ruleSetFiles = files("pmd.xml")
-    ignoreFailures = false
+    ignoreFailures = true
     ruleSets = []
 
     source 'src'
