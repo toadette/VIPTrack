@@ -36,8 +36,6 @@ public class StartActivity extends FragmentActivity {
             userNameTextView.setText(vipByUserName.getUsername());
             postCountTextView.setText(String.valueOf(vipByUserName.getPostsCount()));
         } catch (VipNotFoundException e) {
-            userNameTextView.setText("");
-            postCountTextView.setText("");
         }
     }
 
