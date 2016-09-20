@@ -1,7 +1,5 @@
 package de.toadette.viptrack.presentation;
 
-import android.content.Context;
-
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -13,11 +11,6 @@ import de.toadette.viptrack.port.adapter.FakeVipRepository;
         StartActivity.class
 })
 public class VipTrackModule {
-    private Context context;
-
-    public VipTrackModule(Context context) {
-        this.context = context;
-    }
 
 
     @Provides
