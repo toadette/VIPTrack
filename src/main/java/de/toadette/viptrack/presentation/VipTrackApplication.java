@@ -9,7 +9,7 @@ public class VipTrackApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        graph = ObjectGraph.create(new VipTrackModule(this));
+        graph = ObjectGraph.create(new VipTrackModule());
     }
 
     public void inject(Object object) {
